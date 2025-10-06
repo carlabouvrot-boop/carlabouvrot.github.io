@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carla Bouvrot — Portfolio</title>
+  <meta name="description" content="Portfolio of Carla Bouvrot — final‑year engineering student in Materials & Sustainable Development (MDD). Projects, academic travel, and contact." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Fallback if styles.css fails to load */
+    body{background:#0b0d10;color:#e6e9ee;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:0}
+  </style>
+</head>
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <a href="#top" class="brand-name">Carla Bouvrot</a>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#travel">Academic Travel</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Photos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero / About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h1>Hi, I'm <span class="accent">Carla Bouvrot</span>.</h1>
+        <p class="lead">
+          Final‑year engineering student specializing in <strong>Materials &amp; Sustainable Development (MDD)</strong>.
+          I enjoy turning ideas into tangible systems with a light environmental footprint — from material choice to microelectronics and data.
+        </p>
+
+        <div class="cards flex">
+          <article class="card">
+            <h3>Focus</h3>
+            <ul class="tight">
+              <li>Sustainable materials &amp; eco‑design</li>
+              <li>Microelectronics &amp; embedded systems</li>
+              <li>IoT &amp; data acquisition</li>
+              <li>Rapid prototyping &amp; testing</li>
+              <li>Project coordination &amp; documentation</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>What I value</h3>
+            <p>Clarity, simplicity, and designs that last. I like clean code, reproducible experiments, and honest metrics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <article class="project card flex-col">
+          <div class="project-header flex between">
+            <h3>Connected Greenhouse (IoT)</h3>
+            <div class="tech flex wrap">
+              <span class="chip">Microcontroller</span>
+              <span class="chip">Sensors</span>
+              <span class="chip">C/C++</span>
+              <span class="chip">Python</span>
+              <span class="chip">MQTT/HTTP</span>
+              <span class="chip">Power‑aware design</span>
+            </div>
+          </div>
+          <p>
+            I designed and built a small <strong>IoT‑enabled greenhouse</strong> that monitors temperature, humidity, soil
+            moisture and light, and automates watering/ventilation. The system logs data for analysis and alerts me
+            to abnormal conditions.
+          </p>
+
+          <div class="flex wrap gap">
+            <div class="subcard">
+              <h4>Microelectronics</h4>
+              <ul class="tight">
+                <li>Sizing the power stage (battery/USB), regulators, fuses, and protection.</li>
+                <li>Wiring digital/analog sensors (I²C/SPI/UART, ADCs) and actuators (pumps, fans via PWM &amp; MOSFETs).</li>
+                <li>Noise‑aware routing and basic EMC hygiene; connectors and strain relief.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Programming</h4>
+              <ul class="tight">
+                <li>Embedded firmware in C/C++ (sensor polling, debouncing, state machines, watchdog).</li>
+                <li>Data pipeline with MQTT/HTTP; buffering and retry logic for flaky Wi‑Fi.</li>
+                <li>Python notebooks for data cleaning, plotting, and simple anomaly detection.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Sustainability &amp; Design</h4>
+              <ul class="tight">
+                <li>Material choice with durability and reparability in mind.</li>
+                <li>Low‑power strategies (sleep modes, duty cycling, adaptive sampling).</li>
+                <li>Modular enclosure for easy maintenance and upgrades.</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="muted">
+            Outcome: stable 24/7 operation, clear dashboards, and healthier plants — while keeping cost, energy and e‑waste in check.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Academic Travel ===== -->
+    <section id="travel" class="section">
+      <div class="container">
+        <h2>Academic Travel (Erasmus)</h2>
+        <div class="cards flex">
+          <article class="card">
+            <h3>Israel — 2022</h3>
+            <p>
+              A semester abroad that stretched both my engineering skills and cultural awareness.
+              I worked in international teams, followed advanced courses, and learned to navigate
+              new labs and standards quickly. Beyond classes, everyday life in a different context
+              sharpened my adaptability and communication.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Norway — 2024</h3>
+            <p>
+              Immersed in a Nordic approach to <strong>sustainable engineering</strong>: life‑cycle thinking,
+              renewables, and design for harsh climates. Field visits and project work reinforced
+              my interest in pragmatic, long‑lasting solutions — minimalist by design, efficient by default.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations, internships, or just to say hi.</p>
+        <!-- Replace the three placeholders below with your real details -->
+        <ul class="contact-list">
+          <li>Phone: <a href="tel:+33612345678">REPLACE_ME_PHONE (+33 6 12 34 56 78)</a></li>
+          <li>Email: <a href="mailto:carla.bouvrot@example.com">REPLACE_ME_EMAIL (carla.bouvrot@example.com)</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/carla-bouvrot" target="_blank" rel="noopener">REPLACE_ME_LINKEDIN</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Photos / Gallery ===== -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Photos</h2>
+        <p class="muted">Add your images to <code>/assets/gallery/</code> and update file names below.</p>
+        <div class="gallery flex wrap">
+          <figure class="thumb"><img src="assets/gallery/photo1.jpg" alt="Project / travel photo 1" /></figure>
+          <figure class="thumb"><img src="assets/gallery/photo2.jpg" alt="Project / travel photo 2" /></figure>
+          <figure class="thumb"><img src="assets/gallery/photo3.jpg" alt="Project / travel photo 3" /></figure>
+          <figure class="thumb"><img src="assets/gallery/photo4.jpg" alt="Project / travel photo 4" /></figure>
+          <figure class="thumb"><img src="assets/gallery/photo5.jpg" alt="Project / travel photo 5" /></figure>
+          <figure class="thumb"><img src="assets/gallery/photo6.jpg" alt="Project / travel photo 6" /></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Carla Bouvrot. Built with semantic HTML + Flexbox.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
